@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コマンド一覧</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'M PLUS 1p', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5dc; /* 背景をベージュに */
+            color: #333;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333; /* ヘッダー文字色を黒に */
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            word-wrap: break-word;
+            background-color: #ffeb3b; /* 表の背景を明るい黄色に */
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #fbc02d; /* ヘッダーを少し濃い黄色に */
+            color: white;
+            font-size: 1.2rem;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* 偶数行を薄いグレー */
+        }
+        td code {
+            background-color: #e1f5e1;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+        .buttons-container {
+            margin-top: 30px;
+            text-align: center;
+            background-color: #333; /* ボタン部分の背景を黒に */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .btn {
+            background-color: #b0b0b0; /* 灰色のボタン */
+            color: #333; /* ボタン文字の色を黒に */
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #888; /* ホバー時に色を変える */
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            th, td {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 12px 20px;
+                font-size: 0.9rem;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+            th, td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+            .btn {
+                padding: 10px 15px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>コマンド一覧</h1>
+    <table>
+        <tr>
+            <th>コマンド</th>
+            <th>説明</th>
+        </tr>
+        <tr>
+            <td><code>!shinpati テキスト</code></td>
+            <td>テキストを「」で囲んで返答します。</td>
+        </tr>
+        <tr>
+            <td><code>/shinpati テキスト</code></td>
+            <td>アプリケーションコマンド版でテキストを返答します。</td>
+        </tr>
+        <tr>
+            <td><code>新八</code></td>
+            <td>「なんだよ！ユーザー名！なんか用か！？」と返答します。</td>
+        </tr>
+        <tr>
+            <td><code>その他</code></td>
+            <td>5%の確率で「おいーーーー」と返答します。</td>
+        </tr>
+    </table>
+
+    <div class="buttons-container">
+        <a href="https://aa-bot.jp/shinpati/privacypolicy.html" class="btn" target="_blank">プライバシーポリシー</a>
+        <a href="https://aa-bot/shinpati/termsofuse.html" class="btn" target="_blank">利用規約</a>
+    </div>
+</body>
+</html>
